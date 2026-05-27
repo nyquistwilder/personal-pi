@@ -1,0 +1,28 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment and secrets
+.env
+.env.*
+mise.local.toml
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Nix
+.direnv/
+result
+result-*
+
+# Tool caches
+.cache/
+.rumdl_cache/

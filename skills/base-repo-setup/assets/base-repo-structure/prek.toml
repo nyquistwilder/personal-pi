@@ -1,0 +1,36 @@
+default_install_hook_types = ["pre-commit", "commit-msg"]
+
+[[repos]]
+repo = "local"
+
+[[repos.hooks]]
+id = "format"
+name = "Format repository"
+entry = "nix develop --command just fmt"
+language = "system"
+stages = ["pre-commit"]
+pass_filenames = false
+
+[[repos.hooks]]
+id = "lint"
+name = "Lint repository"
+entry = "nix develop --command just lint"
+language = "system"
+stages = ["pre-commit"]
+pass_filenames = false
+
+[[repos.hooks]]
+id = "gitleaks"
+name = "Scan for secrets"
+entry = "nix develop --command just security-gitleaks"
+language = "system"
+stages = ["pre-commit"]
+pass_filenames = false
+
+[[repos.hooks]]
+id = "conventional-commit"
+name = "Validate Conventional Commit message"
+entry = "nix develop --command just commit-msg-check"
+language = "system"
+stages = ["commit-msg"]
+pass_filenames = true

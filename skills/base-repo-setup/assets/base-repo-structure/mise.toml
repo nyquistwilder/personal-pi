@@ -1,0 +1,18 @@
+[env]
+PROJECT_ENV = "development"
+
+[tasks.shell]
+description = "Enter the Nix development shell"
+run = "nix develop"
+
+[tasks.install-hooks]
+description = "Install local Git hooks"
+run = "nix develop --command just install-hooks"
+
+[tasks.fmt]
+description = "Format the repository"
+run = "nix develop --command just fmt"
+
+[tasks.check]
+description = "Run full repository validation"
+run = "nix develop --command just check"

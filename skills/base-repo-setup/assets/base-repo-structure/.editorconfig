@@ -1,0 +1,50 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = tab
+indent_size = tab
+tab_width = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{c,h,cpp,cxx,cc,hpp,hxx,hh,js,jsx,mjs,cjs,ts,tsx,mts,cts,css,scss,sql}]
+indent_style = tab
+indent_size = tab
+tab_width = 4
+
+[*.{bash,sh}]
+indent_style = tab
+indent_size = tab
+tab_width = 4
+
+[*.{go,cue}]
+indent_style = tab
+indent_size = tab
+tab_width = 4
+
+[*.{json,jsonc,toml,nix,md,yaml,yml,tf,tfvars,hcl}]
+indent_style = space
+indent_size = 2
+
+[flake.lock]
+indent_style = space
+indent_size = 2
+
+[*.{py,rs,zig,java}]
+indent_style = space
+indent_size = 4
+
+[Dockerfile*]
+indent_style = tab
+indent_size = tab
+tab_width = 4
+
+[*.md]
+trim_trailing_whitespace = false
+
+[Makefile]
+indent_style = tab
+indent_size = tab
+tab_width = 4

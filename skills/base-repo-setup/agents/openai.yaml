@@ -1,0 +1,4 @@
+interface:
+  display_name: "Base Repo Setup"
+  short_description: "Scaffold strict baseline Git repositories"
+  default_prompt: "Use $base-repo-setup to scaffold a new repository with the strict baseline."
