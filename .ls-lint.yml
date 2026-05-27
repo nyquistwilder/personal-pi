@@ -1,0 +1,35 @@
+ls:
+  .dir: regex:(\.github|[a-z0-9]+([_-][a-z0-9]+)*)
+  .*: regex:([a-z0-9]+([_-][a-z0-9]+)*)
+ignore:
+  - .git
+  - .direnv
+  - .cache
+  - .rumdl_cache
+  - result
+  - result-*
+  - "**/SKILL.md"
+  - "**/assets/base-repo-structure/**"
+  - README.md
+  - LICENSE
+  - AGENTS.md
+  - Dockerfile
+  - Makefile
+  - .editorconfig
+  - .gitattributes
+  - .gitignore
+  - .gitleaks.toml
+  - .ls-lint.yml
+  - .prettierignore
+  - .prettierrc.json
+  - .rumdl.toml
+  - .trivyignore
+  - flake.nix
+  - flake.lock
+  - justfile
+  - mise.toml
+  - mise.local.toml.example
+  - prek.toml
+  - statix.toml
+  - trivy.yaml
+  - typos.toml

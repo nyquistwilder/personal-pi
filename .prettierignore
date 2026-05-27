@@ -1,0 +1,5 @@
+.git
+.direnv
+.rumdl_cache
+result
+result-*

@@ -1,0 +1,10 @@
+title = "Gitleaks baseline configuration"
+
+[extend]
+useDefault = true
+
+# Add project-specific allowlists only with a clear reason.
+# [allowlist]
+# description = "Reason for the allowlist"
+# paths = []
+# regexes = []

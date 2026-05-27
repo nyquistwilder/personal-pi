@@ -1,0 +1,4 @@
+[global]
+line-length = 120
+respect-gitignore = true
+disable = ["MD013"]

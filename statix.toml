@@ -1,0 +1,3 @@
+disabled = []
+
+ignore = [".direnv", "result", "result-*"]
