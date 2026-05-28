@@ -1,0 +1,4 @@
+interface:
+  display_name: "Python Tests"
+  short_description: "Pytest with uv and 80% branch coverage"
+  default_prompt: "Use $python-test to create or improve Python tests for this project with pytest, uv, and coverage."
